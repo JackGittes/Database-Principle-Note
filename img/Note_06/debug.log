@@ -1,0 +1,7 @@
+[0729/222318:INFO:exception_record.cc(518)] [QB]Process ID: 16460 Type: 2
+[0729/222341:ERROR:webrtcsession.cc(1226)] ConnectDataChannel called when data_channel_ is NULL.
+[0729/222341:WARNING:mediasession.cc(353)] Duplicate id found. Reassigning from 101 to 127
+[0729/222341:WARNING:mediasession.cc(353)] Duplicate id found. Reassigning from 101 to 127
+[0729/222341:WARNING:p2ptransportchannel.cc(415)] Jingle:Port[04DC0CD8:data:1:0:local:Net[any:0.0.0.x/0:Unknown]]: SetOption(5, 0) failed: 0
+[0729/222341:WARNING:p2ptransportchannel.cc(415)] Jingle:Port[04DC1CD0:data:1:0:local:Net[any:0:0:0:x:x:x:x:x/0:Unknown]]: SetOption(5, 0) failed: 0
+[0730/001321:INFO:exception_record.cc(518)] [QB]Process ID: 10600 Type: 2
