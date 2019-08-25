@@ -36,7 +36,7 @@ IBM现在推出了一个基于XML的引擎来提供知识管理的功能，例�
 
 ## 四、数据库系统
 
-<img src="img/Note_05/database_system.png" width="70%" alt="数据库系统">
+<img src="img/Note_05/database_system.png" width="70%" alt="数据库系统" style="display:block;margin:auto;">
 
 - 应用程序+DBMS+数据库+DBA
 - DBMS是数据库系统的核心

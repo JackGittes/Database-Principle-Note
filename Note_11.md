@@ -17,7 +17,7 @@
   - $\pi_x((\pi_x(A)\times B)-A)$，关键就是 ***先查找不满足除法条件的x值***，先笛卡尔乘积将A中的x与B进行拼接，由此得到的是一个完整的联系，这时候再减掉A，就会把满足除法条件的x都减掉了。剩下的结果是不满足除法条件的x值和y的拼接，最后再投影就得到了不满足除法条件的x值。
   - $A/B$就是$A/B=\pi_x(A)-\pi_x(\pi_x(A)\times B-A)$，这就实现了除法，总共使用了6个操作
 
-<img src="img/Note_11/div.png" width="50%">
+<img src="img/Note_11/div.png" width="50%" style="display:block;margin:auto;">
 
 ### **2.4.7 外连接 outer join**
 

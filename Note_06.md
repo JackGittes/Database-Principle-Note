@@ -11,19 +11,19 @@
 
 在现实世界当中，层次结构是非常常见的，例如学校的层级结构的安排，学校下面有各个处、再往下又有各个科室等等。层次模型就是试图去描述现实世界当中的这种树状层级结构。
 
-<img src="img/Note_06/hierachy.png" width="70%" alt="层次模型">
+<img src="img/Note_06/hierachy.png" width="70%" alt="层次模型" style="display:block;margin:auto;">
 
 - 记录（Record）和域（Field）
 - 父子关系（PCR，Parent-Child Relationship）:层次数据模型中最基本的数据关系。它表述了两个记录类型之间1:N关系。
 
 记录是现实世界中的实体，例如一个学生或者一个老师，每个记录都包含了若干个域。层次模型中，双亲子女关系表达了现实世界中一对多的关系。一个实体是一个记录，一类实体就是一种记录类型，PCR关系是两个记录类型之间的关系，例如学生和课程之间的关系就是1对多的关系，一个学生对应多个课程，同时一门课程对应多个学生。院系和班级之间也存在这种关系（实际这是一个多对多关系）。
 
-<img src="img/Note_06/hierachy_instance.png" width="70%" alt="层次模型">
+<img src="img/Note_06/hierachy_instance.png" width="70%" alt="层次模型" style="display:block;margin:auto;">
 
 
 在形式定义上，就是一种树形关系，在实际值的表现上就是一个系对应哪些具体的班级。
 
-<img src="img/Note_06/hierachy_schema.png" width="24%" alt="层次模型">
+<img src="img/Note_06/hierachy_schema.png" width="24%" alt="层次模型" style="display:block;margin:auto;">
 
 
 ### 2.1.1 **层次数据模式**
@@ -38,7 +38,7 @@
 
 但是现实世界是丰富多彩的，并不是所有情况都能表达成这样的关系。有可能存在多对多的关系，例如一个学生选择多门课程。这个时候倒过来就不是树了。
 
-<img src="img/Note_06/vr.png" width="70%" alt="层次模型">
+<img src="img/Note_06/vr.png" width="70%" alt="层次模型" style="display:block;margin:auto;">
 
 - M：N关系存在于不同的记录类型中
 - 一个记录类型是多于两个PCR的孩子
@@ -46,7 +46,7 @@
 
 这时候引入了虚记录的概念（Virtual Record）。所谓虚记录就是一个指针，为了避免的数据的冗余，同时为了保持这种PCR关系，因此有了这种方式。虚记录当中存储的是指针指向真正的学生，它只是一个逻辑上的概念，一个学生选择了多门课程的时候，课程也是一个虚记录，虚记录指向了真正的课程。
 
-<img src="img/Note_06/vr_instance.png" width="70%" alt="层次模型">
+<img src="img/Note_06/vr_instance.png" width="70%" alt="层次模型" style="display:block;margin:auto;">
 
 从结构上来看，似乎是一个树形结构，但是从编程的角度看，由于存在一个指针指回来已经不能算作一个标准的树形结构。
 
@@ -62,7 +62,7 @@
 
 在网状数据模型中不再像层次模型是一棵树，而变成了一个链表。例如在班级和学生的关系（C-S系）上，在C-S系链表中，就有901班级记录，沿着记录的链表就可以找到这个班级的所有学生。
 
-<img src="img/Note_06/network_example.png" width="70%" alt="网状模型">
+<img src="img/Note_06/network_example.png" width="70%" alt="网状模型" style="display:block;margin:auto;">
 
 想要表达雇员记录类型（EMP），表达领导与被领导关系的时候就存在自己和自己连接的情况。在定义系的时候，不能表达主记录和属记录都是自己，这时候就需要一个LINK记录，这里可以定一个1对1关系，我们在这里称为S1，S1代表了某个领导的替代，与其他雇员发生关系，同时又借助S2使雇员与自己发生关系。这里面系的值还是需要借助链表来表达，每一个系型对应的值都是链表。
 

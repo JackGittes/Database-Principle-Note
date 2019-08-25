@@ -13,11 +13,11 @@
   - 重命名操作：将1重命名为sid1，将5号属性重命名为sid2
     - $\rho(C(1\rightarrow sid1,5\rightarrow sid2)),S1\times R1$
 
-<img src="img/Note_10/cp.png" width="25%" alt="CP">
+<img src="img/Note_10/cp.png" width="25%" alt="CP" style="display:block;margin:auto;">
 
 笛卡尔乘积和集合中的笛卡尔乘积是一样的。举一个例子，水手、船、预定表，两种不同的表做笛卡尔乘积其结果是拼接成一张大表，笛卡尔乘积的结果元组是输入表的元组两两拼接组成的。例如当$S1$和$R1$拼接的时候，属性个数就是两张表的属性总数，一共包含3+4=7个属性，元组数目是两张表两两组合，共$2\times 3=6$项。
 
-<img src="img/Note_10/cp_res.png" width="50%" alt="CP">
+<img src="img/Note_10/cp_res.png" width="50%" alt="CP" style="display:block;margin:auto;">
  
 笛卡尔乘积的结果存在很多没有意义的元组，在日常应用中，更有意义的是连接操作，两两拼接有很多无意义的。
 
@@ -28,7 +28,7 @@
 - 连接操作的结果比笛卡尔乘积更少，运算更高效（具体在查询优化的时候会详细讲解）
 - 这种操作有时候也称为 *theta连接*
 
-<img src="img/Note_10/join.png" width="50%">
+<img src="img/Note_10/join.png" width="50%" style="display:block;margin:auto;">
 
 在R\S笛卡尔乘积的基础之上借助条件C进行选择操作，笛卡尔乘积和选择操作的组合就可以实现连接。 
 

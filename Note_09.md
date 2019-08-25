@@ -11,7 +11,7 @@
 - 域完整性约束（Domain）：一张表中的属性值都需要满足属性值定义的要求，例如整型值不可以插入浮点数
 - 实体完整性约束（Entity Integrity Constraint）：一个关系中如果定义了主键的话，则主键属性不能为空。系统会自动进行主键的完整性，强制检查。
 
-<img src="img/Note_09/integrity.png" width="50%" alt="Example">
+<img src="img/Note_09/integrity.png" width="50%" alt="Example" style="display:block;margin:auto;">
 
 例子，之后的例子都是在这几张表上做的。水手和船之间是预定的关系，水手有级别、姓名、年龄属性，船有名称、颜色、编号属性，之后有预定表，表明水手和船的预定关系。
 
@@ -33,7 +33,7 @@
 
 ### **2.4.1 投影**
 
-<img src="img/Note_09/proj.png" width="25%" alt="Projection">
+<img src="img/Note_09/proj.png" width="25%" alt="Projection" style="display:block;margin:auto;">
 
 - 删除不在投影表中的属性
 - 结果的数据模式精确包含投影表中的域，与输入关系具有相同的名称
@@ -46,7 +46,7 @@
 
 ### **2.4.2 选择**
 
-<img src="img/Note_09/sel.png" width="35%" alt="Selection">
+<img src="img/Note_09/sel.png" width="35%" alt="Selection" style="display:block;margin:auto;">
 
 - 选择操作选择满足选择条件（selection condition）的行（rows）
 - 结果是无重复的
