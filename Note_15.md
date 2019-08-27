@@ -44,7 +44,7 @@
   - 图形化查询语言（目的和表格查询一样，都是希望用户不需要记忆SQL的命令）
   - 受限自然语言查询（早期的NITDB，就是向用户提供一个接近自然语言的查询接口，系统翻译查询语句）
 
-<img src="img/Note_15/query.png" width="50%" style="display:block;margin:auto;">
+<img src="img/Note_15/query.png" width="60%" style="display:block;margin:auto;">
 
 ## 三（1） 关系型查询语言
 

@@ -11,7 +11,7 @@
 
 <!-- 操作优化阶段重要做的就是连接操作，首先第一件事情是决定连接操作的次序。 -->
 
-<img src="img/Note_38/example.png" width="50%" style="display:block;margin:auto;">
+<img src="img/Note_38/example.png" width="60%" style="display:block;margin:auto;">
 
 查询优化一般都是对查询代价进行可能性的预估，这个预估未必非常准确，不一定是best，最好策略。对于一个复杂操作来说，可能的操作会非常多，优化起来也会很复杂。下面以一个例子讲解代数优化和操作优化的内容。
 
@@ -21,7 +21,7 @@
 
 之前还有DBMS的语法树，在语法树的基础上，借助等价变换规则对语法树进行代数优化，就变成了查询树。下面就是介绍查询树的等价变换规则：
 
-<img src="img/Note_38/trans.png" width="50%" style="display:block;margin:auto;">
-<img src="img/Note_38/trans2.png" width="50%" style="display:block;margin:auto;">
+<img src="img/Note_38/trans.png" width="60%" style="display:block;margin:auto;">
+<img src="img/Note_38/trans2.png" width="60%" style="display:block;margin:auto;">
 
 凡是对笛卡尔乘积使用的规则对连接都适用。第一条规则说明了两个子树是可以进行交换的，左右子树顺序可以相互交换，连接与笛卡尔乘积还有结合律。第二条结合律相当于可以进行旋转。
